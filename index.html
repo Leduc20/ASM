@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>index</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,12 +18,12 @@
 </head>
 
 <body>
-    <div class="mx-auto max-w-7xl">
+    <div class="mx-auto max-w-7xl px-4">
         <header>
             <div class="mt-4">
                 <ul class="hidden md:flex justify-end block ">
-                    <li class="px-4"><a class="text-xl font-bold hover:text-red-500" href="works.html">Works</a></li>
                     <li class="px-4"><a class="text-xl font-bold hover:text-red-500" href="blog.html">Blog</a></li>
+                    <li class="px-4"><a class="text-xl font-bold hover:text-red-500" href="works.html">Works</a></li>
                     <li class="px-4"><a class="text-xl font-bold hover:text-red-500" href="">Contact</a></li>
                 </ul>
             </div>
@@ -59,12 +59,12 @@
                 </div>
             </div>
             <div>
-                <h3 class="text-[32px] text-center block md:hidden">Recent posts</h3>
+                <h3 class="text-[42px] text-center block md:hidden text-[32px]">Recent posts</h3>
             </div>
             <div class="flex grid grid-cols-1 md:grid-cols-2 gap-8 mt-5 justify-between">
-                <div class="bg-[#FFFFFF] p-8 w-auto h-[300px] rounded-[5px]">
+                <div class="bg-[#FFFFFF] p-8 w-auto h-auto rounded-[5px]">
                     <a href="">
-                        <h2 class="font-bold text-[26px] py-3">Making a design system from <br>
+                        <h2 class="py-3 font-bold text-[32px] md:text-[28px] ">Making a design system from <br>
                     </a>
                     scratch</h2>
                     <div class="text-[18px]">
@@ -78,9 +78,9 @@
                         duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
                     </p>
                 </div>
-                <div class="bg-[#FFFFFF] p-8 w-auto h-[300px] rounded-[5px]">
+                <div class="bg-[#FFFFFF] p-8 w-auto h-auto rounded-[5px]">
                     <a href="">
-                        <h2 class="font-bold text-[26px] py-3">Creating pixel perfect icons in Figma</h2>
+                        <h2 class="py-3 font-bold  text-[32px] md:text-[28px]">Creating pixel perfect icons in Figma</h2>
                         <div class="text-[18px]">
                             <span class="mr-4">12 Feb 2020</span>
                             <span>|</span>
@@ -97,16 +97,16 @@
     <div class="mx-auto">
         <div class="mx-auto h-auto max-w-7xl">
             <h3 class="text-[35px] py-3 text-center md:text-left">Featured works</h3>
-            <div class="text-[19px] md:flex flex-wrap mt-4 border-b-2 px-4">
-                <div class="mr-6">
+            <div class="text-[19px] md:flex flex-wrap mt-4 px-4">
+                <div class="">
                     <img class="w-full" src="image/Rectangle 30.jpg" alt="">
                 </div>
-                <div class="">
+                <div class="px-4">
                     <a href="">
                         <h2 class="font-bold text-[#21243D] text-[35px] md:text-[30px]">Designing Dashboards</h2>
                     </a>
                     <div class="flex py-4">
-                        <button class="bg-[#142850] text-white text-[25px] w-[125px] md:w-[85px] h-[35px] rounded-[25px]">2020</button>
+                        <button class="bg-[#142850] text-white text-[25px] w-[125px] md:w-[75px] h-[35px] text-[15px] rounded-[25px]">2020</button>
                         <p class="text-[25px] mt-1 md:text-[19px] ml-4 text-slate-400">Dashboard</p>
                         <p class="break-all">
                     </div>
@@ -116,17 +116,20 @@
                     </p>
                 </div>
             </div>
-            <div class="flex mt-4 border-b-2 mt-7">
-                <div class="text-[19px] md:flex flex-wrap mt-4 border-b-2 px-4">
-                    <div class="mr-6">
+            <div class="px-4">
+                <hr>
+            </div>
+            <div class="flex mt-4 mt-7">
+                <div class="text-[19px] md:flex flex-wrap mt-4 px-4">
+                    <div class="">
                         <img class="w-full" src="image/Rectangle 32.jpg" alt="">
                     </div>
-                    <div class="">
+                    <div class="px-4">
                         <a href="">
                             <h2 class="font-bold text-[#21243D]  text-[35px] md:text-[30px]">Vibrant Portraits of 2020</h2>
                         </a>
                         <div class="flex py-4">
-                            <button class="bg-[#142850] text-white text-[25px] w-[125px] md:w-[85px] h-[35px] rounded-[25px]">2018</button>
+                            <button class="bg-[#142850] text-white text-[25px] w-[125px] md:w-[75px] h-[35px] text-[16px] rounded-[25px]">2018</button>
                             <p class="text-[25px] mt-1 md:text-[19px] ml-4 text-slate-400">Illustration</p>
                             <p class="break-all">
                         </div>
@@ -137,17 +140,20 @@
                     </div>
                 </div>
             </div>
-            <div class="flex mt-4 border-b-2 mt-7">
-                <div class="text-[19px] md:flex flex-wrap mt-4 border-b-2 px-4">
-                    <div class="mr-6">
+            <div class="px-4">
+                <hr>
+            </div>
+            <div class="flex mt-4 mt-7">
+                <div class="text-[19px] md:flex flex-wrap mt-4 px-4">
+                    <div class="">
                         <img class="w-full" src="image/Rectangle 34.jpg" alt="">
                     </div>
-                    <div class="">
+                    <div class="px-4">
                         <a href="">
                             <h2 class="font-bold text-[#21243D]  text-[35px] md:text-[30px]">36 Days of Malayalam type</h2>
                         </a>
                         <div class="flex py-4">
-                            <button class="bg-[#142850] text-white text-[25px] w-[125px] md:w-[85px] h-[35px] rounded-[25px]">2018</button>
+                            <button class="bg-[#142850] text-white text-[25px] w-[125px] md:w-[75px] h-[35px] text-[16px] rounded-[25px]">2018</button>
                             <p class="text-[25px] mt-1 md:text-[19px] ml-4 text-slate-400">Typography</p>
                             <p class="break-all">
                         </div>
@@ -157,6 +163,9 @@
                         </p>
                     </div>
                 </div>
+            </div>
+            <div class="px-4">
+                <hr>
             </div>
         </div>
     </div>

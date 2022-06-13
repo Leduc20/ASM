@@ -19,146 +19,124 @@
     </style>
 </head>
 
-<body>
-    <div class="mx-auto max-w-7xl px-4">
+<body class="mx-auto max-w-[1152px] px-4">
+    <div>
         <header>
-            <div class="hidden md:block mt-4">
-                <ul class="hidden md:flex justify-end block ">
-                    <li class="px-4"><a class="text-xl font-bold hover:text-red-500" href="blog.html">Blog</a></li>
-                    <li class="px-4"><a class="text-xl font-bold hover:text-red-500" href="works.html">Works</a></li>
-                    <li class="px-4"><a class="text-xl font-bold hover:text-red-500" href="">Contact</a></li>
-                </ul>
-            </div>
-            <div class="block md:hidden flex justify-end">
-                <!-- <img src="image/Mobile-Header.png" alt=""> -->
-                <i class="fa-solid fa-bars text-3xl mt-4"></i>
+            <div>
+                <div class="mx-auto mt-4 max-w-[852px]">
+                    <div id="drop-menu" class="inline-block md:hidden flex justify-end">
+                        <!-- <img src="image/Mobile-Header.png" alt=""> -->
+                        <i class="fa-solid fa-bars text-3xl mt-4"></i>
+                    </div>
+                    <ul id="main-menu" class="flex justify-end grid  md:flex justify-end">
+                        <li class="px-4"><a class="text-[20px] leading-[29px] font-bold hover:text-red-500"
+                                href="blog.html">Blog</a></li>
+                        <li class="px-4"><a class="text-[20px] leading-[29px] font-bold hover:text-red-500"
+                                href="works.html">Works</a></li>
+                        <li class="px-4"><a class="text-[20px] leading-[29px] font-bold hover:text-red-500"
+                                href="">Contact</a></li>
+                    </ul>
+                   
+                </div>
             </div>
         </header>
     </div>
-    <div class="mx-auto max-w-5xl">
+    <div class="mx-auto max-w-[880px]">
         <section class="mx-auto mt-[85px]">
             <div class="px-4">
                 <a href="">
-                    <h3 class="font-bold text-[48px] md:text-[45px] py-3">Work</h3>
+                    <h3 class="font-bold text-[30px] md:text-[44px] py-3">Work</h3>
                 </a>
             </div>
-            <div>
-                <div class="text-[19px] md:flex flex-wrap mt-4  m-auto px-4">
+            <div class="mt-4" id="product">
+                <div class="text-[19px] md:flex mt-4 border-b-2 pb-3">
                     <div class="">
-                        <a href=""><img class="w-full" src="image/Rectangle 30.jpg" alt=""></a>
+                        <img class="w-full" src="image/Rectangle 30.jpg" alt="">
                     </div>
-                    <div class="ml-4">
-                        <a href="">
-                            <h2 class="font-bold text-[#21243D] text-[35px] md:text-[30px]">Designing Dashboards</h2>
-                        </a>
-                        <div class="flex py-4">
+                    <div class="w-auto md:w-[594px] ml-1 md:ml-4">
+                        <h2 class="font-bold text-[#21243D] text-[24px] md:text-[30px]"><a href="">Designing
+                                Dashboards</a>
+                        </h2>
+                        <div class="flex py-2 place-items-center">
                             <button
-                                class="bg-[#142850] text-white w-[75px] md:w-[75px] h-[32px] text-[19px] rounded-[25px]">2020</button>
-                            <a href="">
-                                <p class="text-[25px] mt-1 md:text-[19px] ml-4 text-slate-400">Dashboard</p>
-                            </a>
+                                class=" bg-[#142850] text-white w-[75px] md:w-[75px] h-[25px] text-[17px] rounded-[25px]">2022</button>
+                            <p class="text-[25px] md:text-[19px] ml-4 text-slate-400">Dashboard</p>
                             <p class="break-all">
                         </div>
                         <p class="text-[#21243D] text-[25px] md:text-[16px] mt-2 mb-4">
-                            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia <br>
-                            consequat duis enim velit mollit. Exercitation veniam consequat <br> sunt nostrud amet.
+                            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia
+                            consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
                         </p>
                     </div>
                 </div>
-                <div class="px-4">
-                    <hr>
-                </div>
-                <div class="flex mt-4 mt-7">
-                    <div class="text-[19px] md:flex flex-wrap mt-4 px-4">
-                        <div class="">
-                            <a href=""><img class="w-full" src="image/Rectangle 32.jpg" alt=""></a>
+                <div class="text-[19px] md:flex mt-8 border-b-2 pb-3">
+                    <div class="">
+                        <img class="w-full" src="image/Rectangle 32.jpg" alt="">
+                    </div>
+                    <div class="w-auto md:w-[594px] ml-1 md:ml-4">
+                        <a href="">
+                            <h2 class="font-bold text-[#21243D] text-[24px] md:text-[30px]">Vibrant Portraits of 2020
+                            </h2>
+                        </a>
+                        <div class="flex py-2 place-items-center">
+                            <button
+                                class="bg-[#142850] text-white w-[75px] md:w-[75px] h-[25px] text-[17px] rounded-[25px]">2018</button>
+                            <p class="text-[25px] md:text-[19px] ml-4 text-slate-400">Illustration</p>
+                            <p class="break-all">
                         </div>
-                        <div class="ml-4">
-                            <a href="">
-                                <h2 class="font-bold text-[#21243D]  text-[35px] md:text-[30px]">Vibrant Portraits of
-                                    2020</h2>
-                            </a>
-                            <div class="flex py-4">
-                                <button
-                                    class="bg-[#142850] text-white w-[75px] md:w-[75px] h-[32px] text-[19px] rounded-[25px]">2018</button>
-                                <a href="">
-                                    <p class="text-[25px] mt-1 md:text-[19px] ml-4 text-slate-400">Illustration</p>
-                                </a>
-                                <p class="break-all">
-                            </div>
-                            <p class="text-[#21243D] text-[25px] md:text-[16px] mt-2 mb-4">
-                                Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia
-                                <br>
-                                consequat duis enim velit mollit. Exercitation veniam consequat <br> sunt nostrud amet.
-                            </p>
-                        </div>
+                        <p class="text-[#21243D] text-[25px] md:text-[16px] mt-2 mb-4">
+                            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia
+                            consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
+                        </p>
                     </div>
                 </div>
-                <div class="px-4">
-                    <hr>
-                </div>
-                <div class="flex mt-4  mt-7">
-                    <div class="text-[19px] md:flex flex-wrap mt-4  px-4">
-                        <div class="">
-                            <a href=""><img class="w-full" src="image/Rectangle 34.jpg" alt=""></a>
+                <div class="text-[19px] md:flex mt-8 border-b-2 pb-3">
+                    <div class="">
+                        <img class="w-full" src="image/Rectangle 34.jpg" alt="">
+                    </div>
+                    <div class="w-auto md:w-[594px] ml-1 md:ml-4">
+                        <a href="">
+                            <h2 class="font-bold text-[#21243D] text-[24px] md:text-[30px]">36 Days of Malayalam type
+                            </h2>
+                        </a>
+                        <div class="flex py-2 place-items-center">
+                            <button
+                                class="bg-[#142850] text-white w-[75px] md:w-[75px] h-[25px] text-[17px] rounded-[25px]">2018</button>
+                            <p class="text-[25px] md:text-[19px] ml-4 text-slate-400">Typography</p>
+                            <p class="break-all">
                         </div>
-                        <div class="ml-4">
-                            <a href="">
-                                <h2 class="font-bold text-[#21243D]  text-[35px] md:text-[30px]">36 Days of Malayalam
-                                    type</h2>
-                            </a>
-                            <div class="flex py-4">
-                                <button
-                                    class="bg-[#142850] text-white w-[75px] md:w-[75px] h-[32px] text-[19px] rounded-[25px]">2018</button>
-                                <a href="">
-                                    <p class="text-[25px] mt-1 md:text-[19px] ml-4 text-slate-400">Typography</p>
-                                </a>
-                                <p class="break-all">
-                            </div>
-                            <p class="text-[#21243D] text-[25px] md:text-[16px] mt-2 mb-4">
-                                Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia
-                                <br>
-                                consequat duis enim velit mollit. Exercitation veniam consequat <br> sunt nostrud amet.
-                            </p>
-                        </div>
+                        <p class="text-[#21243D] text-[25px] md:text-[16px] mt-2 mb-4">
+                            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia
+                            consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
+                        </p>
                     </div>
                 </div>
-                <div class="px-4">
-                    <hr>
-                </div>
-                <div class="flex mt-4  mt-7">
-                    <div class="text-[19px] md:flex flex-wrap mt-4  px-4">
-                        <div class="">
-                            <a href=""><img class="w-full" src="image/Rectangle 40.png" alt=""></a>
-                        </div>
-                        <div class="ml-4">
-                            <a href="">
-                                <h2 class="font-bold text-[#21243D]  text-[35px] md:text-[30px]">36 Days of Malayalam
-                                    type</h2>
-                            </a>
-                            <div class="flex py-4">
-                                <button
-                                    class="bg-[#142850] text-white w-[75px] md:w-[75px] h-[32px] text-[19px] rounded-[25px]">2018</button>
-                                <a href="">
-                                    <p class="text-[25px] mt-1 md:text-[19px] ml-4 text-slate-400">Typography</p>
-                                </a>
-                                <p class="break-all">
-                            </div>
-                            <p class="text-[#21243D] text-[25px] md:text-[16px] mt-2 mb-4">
-                                Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia
-                                <br>
-                                consequat duis enim velit mollit. Exercitation veniam consequat <br> sunt nostrud amet.
-                            </p>
-                        </div>
+                <div class="text-[19px] md:flex mt-8 border-b-2 pb-3">
+                    <div class="">
+                        <img class="w-full" src="image/Rectangle 40.png" alt="">
                     </div>
-                </div>
-                <div class="px-4">
-                    <hr>
+                    <div class="w-auto md:w-[594px] ml-1 md:ml-4">
+                        <a href="">
+                            <h2 class="font-bold text-[#21243D] text-[24px] md:text-[30px]">Components
+                            </h2>
+                        </a>
+                        <div class="flex py-2 place-items-center">
+                            <button
+                                class="bg-[#142850] text-white w-[75px] md:w-[75px] h-[25px] text-[17px] rounded-[25px]">2018</button>
+                            <p class="text-[25px] md:text-[19px] ml-4 text-slate-400">Components, Design</p>
+                            <p class="break-all">
+                        </div>
+                        <p class="text-[#21243D] text-[25px] md:text-[16px] mt-2 mb-4">
+                            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia
+                            consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
+                        </p>
+                    </div>
                 </div>
             </div>
-        </section>
-
-        <div class="py-[65px] mt-[25px]">
+    </div>
+    </section>
+    <section>
+        <div class="py-[65px] mt-[15px]">
             <div class="flex justify-center">
                 <a href=""><img class="px-6 w-[100px] md:w-[85px]" src="image/fb.png" alt=""></a>
                 <a href=""><img class="px-6 w-[100px] md:w-[85px]" src="image/insta.png" alt=""></a>
@@ -167,9 +145,16 @@
             </div>
             <p class="text-[19px] md:text-[14px] text-center py-6">Copyright ©2020 All rights reserved </p>
         </div>
-    </div>
+    </section>
 
-
+    <script type="module" src="src/js/main.js"></script>
+    <script>
+        const menu=document.getElementById("main-menu");
+        const drop=document.getElementById("drop-menu");
+        drop.addEventListener("click",function(){
+            menu.classList.toggle("hidden");
+        });
+    </script>
 
 </body>
 

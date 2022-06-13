@@ -5,12 +5,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>index</title>
+    <title>Home</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Heebo&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="fontawesome-free-6.1.1-web/css/all.min.css">
     <style>
+        .active {
+            background-color: red;
+        }
+
         body {
             font-family: 'Heebo', sans-serif;
         }
@@ -18,168 +24,174 @@
 </head>
 
 <body>
-    <div class="mx-auto max-w-7xl px-4">
-        <header>
-            <div class="mt-4">
-                <ul class="hidden md:flex justify-end block ">
-                    <li class="px-4"><a class="text-xl font-bold hover:text-red-500" href="blog.html">Blog</a></li>
-                    <li class="px-4"><a class="text-xl font-bold hover:text-red-500" href="works.html">Works</a></li>
-                    <li class="px-4"><a class="text-xl font-bold hover:text-red-500" href="">Contact</a></li>
-                </ul>
-            </div>
-        </header>
-        <section class="py-[150px]">
-            <div class="mx-auto">
-                <div class="flex flex-wrap-reverse justify-center md:grid grid-cols-2">
-                    <div class="text-center md:text-left">
-                        <h2 class="text-[58px] font-bold">Hi, I am Duc<br> Creative Technologist</h2>
-                        <p class="text-[20px] py-4">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
-                            <br> sint. Velit officia consequat duis enim velit mollit. Exercitation veniam <br>
-                            consequat sunt nostrud amet.
-                        </p>
-                        <button class="bg-[#FF6464] text-white p-3 w-[205px] mt-4 rounded-[5px]">Download
-                            Resume</button>
-                    </div>
-                    <div class="flex justify-end items-center">
-                        <img class="h-96" src="image/Ellipse 1.jpg" alt="">
-                    </div>
-                </div>
-            </div>
+    <section class="mx-auto max-w-[1152px] px-4">
+        <div>
+            <div class="mx-auto mt-4 max-w-[852px]">
+                <div class="inline-block md:hidden flex justify-end">
+                    <!-- <img id="drop-menu" src="image/Mobile-Header.png" alt=""> -->
+                    <i id="drop-menu" class="fa-solid fa-bars text-3xl mt-4"></i>
 
-        </section>
-    </div>
-    <section class="mx-auto  bg-[#EDF7FA] h-auto px-[15px]">
-        <div class=" mx-auto max-w-7xl">
-            <div class="flex justify-between py-4">
-                <div class="">
-                    <h3 class="text-[32px] hidden md:block">Recent posts</h3>
                 </div>
-                <div>
-                    <button class="text-cyan-400 hidden md:block text-center">View all</button>
-                </div>
+                <ul id="main-menu" class="flex justify-end grid md:flex justify-end">
+                    <li id="li" class="px-4"><a class="text-[20px] leading-[29px] font-bold hover:text-red-500"
+                            href="blog.html">Blog</a></li>
+                    <li class="px-4"><a class="text-[20px] leading-[29px] font-bold hover:text-red-500"
+                            href="works.html">Works</a></li>
+                    <li class="px-4"><a class="text-[20px] leading-[29px] font-bold hover:text-red-500"
+                            href="">Contact</a></li>
+                </ul>
+
             </div>
-            <div>
-                <h3 class="text-[42px] text-center block md:hidden text-[32px]">Recent posts</h3>
+        </div>
+        </div>
+    </section>
+    <section class="mx-auto max-w-[880px] mt-[100px] md:mt-[200px]">
+        <div class="flex flex-wrap-reverse justify-center md:grid grid-cols-2">
+            <div class="text-center md:text-left">
+                <h2 class="font-bold text-[32px] md:text-[44px] leading-[60px]">
+                    Hi, I am John,
+                    Creative Technologist
+                </h2>
+                <p class="text-[16px] mt-[20px]  mb-[35px]">
+                    Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat
+                    duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
+                </p>
+
+                <a href="" class="bg-red-400 p-3 rounded-[5px] text-white w-[208px] h-[47px]">
+                    Dowload Resume
+                </a>
             </div>
-            <div class="flex grid grid-cols-1 md:grid-cols-2 gap-8 mt-5 justify-between">
-                <div class="bg-[#FFFFFF] p-8 w-auto h-auto rounded-[5px]">
-                    <a href="">
-                        <h2 class="py-3 font-bold text-[32px] md:text-[28px] ">Making a design system from <br>
-                    </a>
-                    scratch</h2>
-                    <div class="text-[18px]">
-                        <span class="mr-4">12 Feb 2020</span>
-                        <span>|</span>
-                        <span class="ml-4">Design,Pattern</span>
+            <div class="flex justify-center md:justify-end">
+                <img src="image/Ellipse 1.jpg" alt="" class="">
+            </div>
+        </div>
+    </section>
+    <a href=""></a>
+    <section class="bg-[#EDF7FA] mt-[82px] px-4">
+        <div class="mx-auto max-w-[880px] py-6" id="productPost">
+            <div class="flex justify-center md:justify-between mb-4">
+                <h3 class="text-[#21243D] text-[18px] md:text-[16px]">Recent posts</h3>
+                <a href="" class="text-[#00A8CC] hidden md:block">View all</a>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+                <div class="text-[#21243D] bg-[#FFFF] p-5" id="productPost">
+                    <h2 class="text-[22px] md:text-[26px] font-bold leading-[39px]"><a href="">Making a design system
+                            from scratch</a></h2>
+                    <div class="mt-[14px] mb-[11px] text-[16px]">
+                        <span>12 Feb 2020</span>
+                        <span class="px-4">|</span>
+                        <span>Disgn,Pattern</span>
                     </div>
-                    <p class="py-2 text-[16px]">
+                    <p class="leading-[24px]">
                         Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia
-                        consequat
-                        duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
+                        consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
                     </p>
                 </div>
-                <div class="bg-[#FFFFFF] p-8 w-auto h-auto rounded-[5px]">
-                    <a href="">
-                        <h2 class="py-3 font-bold  text-[32px] md:text-[28px]">Creating pixel perfect icons in Figma</h2>
-                        <div class="text-[18px]">
-                            <span class="mr-4">12 Feb 2020</span>
-                            <span>|</span>
-                            <span class="ml-4">Figma,Icon Design</span>
-                        </div>
-                        <p class="py-2 text-[16px]">
-                            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia
-                            consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
-                        </p>
+                <div class="text-[#21243D] bg-[#FFFF] p-5">
+                    <h2 class="text-[22px]  md:text-[26px] font-bold leading-[39px]"><a href="">Creating pixel perfect
+                            icons in Figma</a></h2>
+                    <div class="mt-[14px] mb-[11px]">
+                        <span>12 Feb 2020</span>
+                        <span class="px-4">|</span>
+                        <span>Disgn,Pattern</span>
+                    </div>
+                    <p class="leading-[24px]">
+                        Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia
+                        consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
+                    </p>
                 </div>
             </div>
         </div>
     </section>
-    <div class="mx-auto">
-        <div class="mx-auto h-auto max-w-7xl">
-            <h3 class="text-[35px] py-3 text-center md:text-left">Featured works</h3>
-            <div class="text-[19px] md:flex flex-wrap mt-4 px-4">
-                <div class="">
-                    <img class="w-full" src="image/Rectangle 30.jpg" alt="">
-                </div>
-                <div class="px-4">
-                    <a href="">
-                        <h2 class="font-bold text-[#21243D] text-[35px] md:text-[30px]">Designing Dashboards</h2>
-                    </a>
-                    <div class="flex py-4">
-                        <button class="bg-[#142850] text-white w-[75px] md:w-[75px] h-[32px] text-[19px] rounded-[25px]">2020</button>
-                        <p class="text-[25px] mt-1 md:text-[19px] ml-4 text-slate-400">Dashboard</p>
-                        <p class="break-all">
+    <section>
+        <div class="mx-auto max-w-[880px] py-6 px-4">
+            <h3 class="text-[18px] md:text-[22px] leading-[60px] text-center md:text-left">Featured works</h3>
+            <div class="mt-4">
+                <div class="text-[19px] md:flex mt-4 border-b-2 pb-3">
+                    <div class="">
+                        <img class="w-full" src="image/Rectangle 30.jpg" alt="">
                     </div>
-                    <p class="text-[#21243D] text-[25px] md:text-[16px] mt-2 mb-4">
-                        Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia <br>
-                        consequat duis enim velit mollit. Exercitation veniam consequat <br> sunt nostrud amet.
-                    </p>
+                    <div class="w-auto md:w-[594px] ml-1 md:ml-4">
+                        <a href="">
+                            <h2 class="font-bold text-[#21243D] text-[24px] md:text-[28px]">Designing Dashboards
+                            </h2>
+                        </a>
+                        <div class="flex py-2 place-items-center">
+                            <button
+                                class=" bg-[#142850] text-white w-[75px] md:w-[75px] h-[25px] text-[17px] rounded-[25px]">2020</button>
+                            <p class="text-[25px] md:text-[19px] ml-4 text-slate-400">Dashboard</p>
+                            <p class="break-all">
+                        </div>
+                        <p class="text-[#21243D] text-[25px] md:text-[16px] mt-2 mb-4">
+                            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia
+                            consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
+                        </p>
+                    </div>
                 </div>
-            </div>
-            <div class="px-4">
-                <hr>
-            </div>
-            <div class="flex mt-4 mt-7">
-                <div class="text-[19px] md:flex flex-wrap mt-4 px-4">
+                <div class="text-[19px] md:flex mt-4 border-b-2 pb-3 mt-8">
                     <div class="">
                         <img class="w-full" src="image/Rectangle 32.jpg" alt="">
                     </div>
-                    <div class="px-4">
+                    <div class="w-auto md:w-[594px] ml-1 md:ml-4">
                         <a href="">
-                            <h2 class="font-bold text-[#21243D]  text-[35px] md:text-[30px]">Vibrant Portraits of 2020</h2>
+                            <h2 class="font-bold text-[#21243D] text-[28px]">Vibrant Portraits of 2020
+                            </h2>
                         </a>
-                        <div class="flex py-4">
-                            <button class="bg-[#142850] text-white w-[75px] md:w-[75px] h-[32px] text-[19px] rounded-[25px]">2018</button>
-                            <p class="text-[25px] mt-1 md:text-[19px] ml-4 text-slate-400">Illustration</p>
+                        <div class="flex py-2 place-items-center">
+                            <button
+                                class="bg-[#142850] text-white w-[75px] md:w-[75px] h-[25px] text-[17px] rounded-[25px]">2018</button>
+                            <p class="text-[25px] md:text-[19px] ml-4 text-slate-400">Illustration</p>
                             <p class="break-all">
                         </div>
                         <p class="text-[#21243D] text-[25px] md:text-[16px] mt-2 mb-4">
-                            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia <br>
-                            consequat duis enim velit mollit. Exercitation veniam consequat <br> sunt nostrud amet.
+                            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia
+                            consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
                         </p>
                     </div>
                 </div>
-            </div>
-            <div class="px-4">
-                <hr>
-            </div>
-            <div class="flex mt-4 mt-7">
-                <div class="text-[19px] md:flex flex-wrap mt-4 px-4">
+                <div class="text-[19px] md:flex mt-4 border-b-2 pb-3 mt-8">
                     <div class="">
                         <img class="w-full" src="image/Rectangle 34.jpg" alt="">
                     </div>
-                    <div class="px-4">
+                    <div class="w-auto md:w-[594px] ml-1 md:ml-4">
                         <a href="">
-                            <h2 class="font-bold text-[#21243D]  text-[35px] md:text-[30px]">36 Days of Malayalam type</h2>
+                            <h2 class="font-bold text-[#21243D] text-[28px]">36 Days of Malayalam type
+                            </h2>
                         </a>
-                        <div class="flex py-4">
-                            <button class="bg-[#142850] text-white w-[75px] md:w-[75px] h-[32px] text-[19px] rounded-[25px]">2018</button>
-                            <p class="text-[25px] mt-1 md:text-[19px] ml-4 text-slate-400">Typography</p>
+                        <div class="flex py-2 place-items-center">
+                            <button
+                                class="bg-[#142850] text-white w-[75px] md:w-[75px] h-[25px] text-[17px] rounded-[25px]">2018</button>
+                            <p class="text-[25px] md:text-[19px] ml-4 text-slate-400">Typography</p>
                             <p class="break-all">
                         </div>
                         <p class="text-[#21243D] text-[25px] md:text-[16px] mt-2 mb-4">
-                            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia <br>
-                            consequat duis enim velit mollit. Exercitation veniam consequat <br> sunt nostrud amet.
+                            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia
+                            consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
                         </p>
                     </div>
                 </div>
             </div>
-            <div class="px-4">
-                <hr>
+        </div>
+    </section>
+    <section>
+        <div class="py-[65px] mt-[15px]">
+            <div class="flex justify-center">
+                <a href=""><img class="px-6 w-[100px] md:w-[85px]" src="image/fb.png" alt=""></a>
+                <a href=""><img class="px-6 w-[100px] md:w-[85px]" src="image/insta.png" alt=""></a>
+                <a href=""><img class="px-6 w-[100px] md:w-[85px]" src="image/Group.png" alt=""></a>
+                <a href=""><img class="px-6 w-[100px] md:w-[85px]" src="image/Linkedin.png" alt=""></a>
             </div>
+            <p class="text-[19px] md:text-[14px] text-center py-6">Copyright ©2020 All rights reserved </p>
         </div>
-    </div>
-
-    <div class="py-[65px] mt-[25px]">
-        <div class="flex justify-center">
-            <a href=""><img class="px-6 w-[100px] md:w-[85px]" src="image/fb.png" alt=""></a>
-            <a href=""><img class="px-6 w-[100px] md:w-[85px]" src="image/insta.png" alt=""></a>
-            <a href=""><img class="px-6 w-[100px] md:w-[85px]" src="image/Group.png" alt=""></a>
-            <a href=""><img class="px-6 w-[100px] md:w-[85px]" src="image/Linkedin.png" alt=""></a>
-        </div>
-        <p class="text-[19px] md:text-[14px] text-center py-6">Copyright ©2020 All rights reserved </p>
-    </div>
-    </div>
+    </section>
 </body>
+<script>
+    const menu = document.getElementById("main-menu");
+    const drop = document.getElementById("drop-menu");
+    drop.addEventListener("click", function () {
+        menu.classList.toggle("hidden");
+    });
+</script>
+<script type="module" src="src/js/main.js"></script>
 
 </html>
